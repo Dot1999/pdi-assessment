@@ -20,7 +20,7 @@ class AnnouncementSeeder extends Seeder
             $announcement = Announcement::create([
                 "title" => $faker->sentence,
                 "content" => implode('. ', $faker->paragraphs()),
-                "author_id" => 1
+                "author" => 1
             ]);
             $announcement->setDepartments(Department::take(rand(1, 10))->inRandomOrder()->pluck('id')->toArray());
         }
