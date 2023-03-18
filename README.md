@@ -31,6 +31,9 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 - `PHP` 8.1+
 - `MySQL` 5.7+
 - `Composer` 2.2+
+- `Node.js` 16+
+- `NPM`
+- `PHP Extensions (GD, Zip)`
 
 # Getting started
 
@@ -46,6 +49,11 @@ Install all the dependencies using composer
 
     composer install
 
+Install all npm dependencies
+
+    npm install
+    npm run build
+
 Rename the example env file to .env and configure your database connection
 
     DB_CONNECTION=mysql
@@ -59,6 +67,10 @@ Run the database migrations (**Set the database connection in .env before migrat
 
     php artisan migrate --seed
     
+Generate APP Key
+
+    php artisan key:generate
+
 Start the local development server
 
     php artisan serve
