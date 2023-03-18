@@ -63,3 +63,9 @@ Start the local development server
 
     php artisan serve
 
+# Login Credentials
+
+Super Admin user
+
+     email: superadmin@pdi.com
+     password: password
